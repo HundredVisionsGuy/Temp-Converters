@@ -48,9 +48,14 @@ class KnownValues(unittest.TestCase):
         result = TempConverters.celsiusToFahrenheit(55)
         # Check for expected output
         self.assertEqual(131.0, result)
+        
 
     def test_celsiusToFahrenheit_forMinus50C(self):
         # Capture the results of the function
         result = TempConverters.celsiusToFahrenheit(-50)
         # Check for expected output
         self.assertEqual(-58.0, result)
+
+# Run the tests
+if __name__ == '__main__':
+    unittest.main()
