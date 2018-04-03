@@ -15,7 +15,7 @@ class KnownValues(unittest.TestCase):
 
     def test_fahrenheitToCelsius_for32F(self):
         # Capture the results of the function
-        result = TempConverters.fahrenheitToCelsius(212)
+        result = TempConverters.fahrenheitToCelsius(32)
         # Check for expected output
         self.assertEqual(0.0, result)
 
@@ -29,7 +29,7 @@ class KnownValues(unittest.TestCase):
         # Capture the results of the function
         result = TempConverters.fahrenheitToCelsius(50)
         # Check for expected output
-        self.assertEqual(40.0, result)
+        self.assertEqual(10.0, result)
 
     def test_celsiusToFahrenheit_for0C(self):
         # Capture the results of the function
